@@ -204,54 +204,43 @@ button {
 .content-wrapper {
   width: 100%;
   max-width: 1240px;
-  padding-left: $spacer-6;
-  padding-right: $spacer-6;
+  padding-left: $spacer-3;
+  padding-right: $spacer-3;
   margin-left: auto;
   margin-right: auto;
 }
 
-.desk-visible {
-  display: block;
-}
-
 .only-mobile {
-  display: none;
+  display: block;
 }
 
-.hide-mobile-tablet {
-  display: block;
+.desk-visible {
+  display: none;
 }
 
 .only-mobile-tablet {
   display: none;
 }
 
-@include mobile-tablet {
-  .content-wrapper {
+@include tablet{
+  .content-wrapper{
     padding-left: $spacer-5;
     padding-right: $spacer-5;
   }
-
-  .hide-mobile-tablet {
+  .only-mobile{
     display: none;
   }
-
-  .only-mobile-tablet {
+  .only-mobile-tablet{
     display: block;
   }
 }
 
-@include mobile {
-  .content-wrapper {
-    padding-left: $spacer-3;
-    padding-right: $spacer-3;
-  }
-
-  .desk-visible {
-    display: none;
-  }
-
-  .only-mobile {
+@include desktop{
+  .desk-visible{
     display: block;
+  }
+
+  .only-mobile-tablet{
+    display: none;
   }
 }
