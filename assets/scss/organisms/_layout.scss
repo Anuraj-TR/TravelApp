@@ -1,0 +1,60 @@
+.ta-layout {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: $spacer-0;
+
+  &__left {
+    width: 100%;
+    height: 100%;
+    max-height: calc(100vh - 50px);
+    position: absolute;
+    top: 50px;
+    left: 0;
+    transition: all 0.3s ease-in-out;
+    background: var(
+      --color-gradient-primary-100,
+      linear-gradient(141deg, #0a69da 32.24%, #0856c8 115.93%, #0231a5 164.9%)
+    );
+
+    &.ta-sidebar--closed {
+      width: 100%;
+      transition: all 0.3s ease-in-out;
+    }
+  }
+
+  &__right {
+    flex: 1;
+    background-color: grey;
+    height: 100vh;
+    overflow-y: scroll;
+  }
+}
+
+@include tablet {
+  .ta-layout {
+    &__left {
+      max-width: 300px;
+    }
+  }
+}
+
+@include desktop {
+  .ta-layout {
+    padding: $spacer-2 $spacer-4;
+    &__left {
+      position: static;
+      max-height: calc(100vh - 100px);
+      border-radius: 16px;
+      &.ta-sidebar--closed {
+        width: auto;
+      }
+    }
+    &__right {
+      margin-left: $spacer-3;
+    }
+  }
+}
