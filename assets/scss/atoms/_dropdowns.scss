@@ -1,0 +1,16 @@
+.ta-dropdown{
+  .btn{
+    font-size: 13px;
+    font-weight: 600;
+    color: $color-black;
+    border: 1px solid #DADDE3;
+    outline: none;
+    box-shadow: none;
+    padding: $spacer-2 $spacer-3;
+    &:focus,
+    &:hover{
+    box-shadow: none;
+      outline: none;
+    }
+  }
+}
