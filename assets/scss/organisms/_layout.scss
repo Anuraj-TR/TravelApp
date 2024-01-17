@@ -1,0 +1,31 @@
+.ta-layout{
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+
+  &__left{
+    width: 100%;
+    max-width: 400px;
+    min-height: calc(100vh - 50px);
+    position: absolute;
+    top: 50px;
+    left: 0;
+
+    background-color: $color-primary;
+  }
+
+  &__right{
+    flex: 1;
+    background-color: grey;
+  }
+}
+
+@include desktop{
+  .ta-layout{
+    &__left{
+      position: static;
+      min-height: calc(100vh - 350px);
+    }
+  }
+}
