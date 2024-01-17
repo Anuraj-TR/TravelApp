@@ -1,38 +1,153 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- styles -->
-    <link rel="stylesheet" href="../assets/css/aos.css">
-    <link rel="stylesheet" href="../assets/css/slick.css">
-    <link rel="stylesheet" href="../assets/css/slick-theme.css">
-    <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
-    <link rel="stylesheet" href="../assets/css/style.css" />
-    <!-- styles -->
-    <title>Document</title>
-  </head>
-  <body>
-    <!-- layout content start -->
-    <div class="ta-layout">
-      <div class="ta-layout__left">
-        sidebar
-      </div>
-      <div class="ta-layout__right">
-        <div class="content-wrapper">
-          content
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- styles -->
+  <link rel="stylesheet" href="../assets/css/aos.css">
+  <link rel="stylesheet" href="../assets/css/slick.css">
+  <link rel="stylesheet" href="../assets/css/slick-theme.css">
+  <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../assets/css/style.css" />
+  <!-- styles -->
+  <title>Document</title>
+</head>
+
+<body>
+  <!-- layout content start -->
+  <div class="ta-layout">
+    <div class="ta-layout__left ta-sidebar--closed">
+      <!-- sidebar content start -->
+      <div class="ta-sidebar">
+        <div class="ta-sidebar__header">
+          <div class="ta-sidebar__header-logo">
+            <img src="../assets/images/Brand-Logo.png" alt="Brand Logo">
+          </div>
+          <button class="ta-sidebar__header-handler">
+            <img src="../assets/images/sidebar-menu.png" alt="sidebar menu image">
+          </button>
+        </div>
+        <div class="ta-sidebar__cnt">
+          <ul class="ta-sidebar__menu">
+            <li>
+              <a href="#" class="ta-sidebar__menu-link active">
+                <span class="ta-sidebar__menu-logo">
+                  <img src="../assets/images/Home.png" alt="home button logo">
+                </span>
+                <span class="ta-sidebar__menu-text">
+                  home
+                </span>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="ta-sidebar__menu-link">
+                <span class="ta-sidebar__menu-logo">
+                  <img src="../assets/images/Wallet.png" alt="Wallet button logo">
+                </span>
+                <span class="ta-sidebar__menu-text">
+                  Wallet
+                </span>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="ta-sidebar__menu-link">
+                <span class="ta-sidebar__menu-logo">
+                  <img src="../assets/images/Booking.png" alt="Booking button logo">
+                </span>
+                <span class="ta-sidebar__menu-text">
+                  Booking
+                </span>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="ta-sidebar__menu-link">
+                <span class="ta-sidebar__menu-logo">
+                  <img src="../assets/images/Business.png" alt="Business button logo">
+                </span>
+                <span class="ta-sidebar__menu-text">
+                  Business
+                </span>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="ta-sidebar__menu-link">
+                <span class="ta-sidebar__menu-logo">
+                  <img src="../assets/images/Explore.png" alt="Explore button logo">
+                </span>
+                <span class="ta-sidebar__menu-text">
+                  Explore
+                </span>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="ta-sidebar__menu-link">
+                <span class="ta-sidebar__menu-logo">
+                  <img src="../assets/images/Support.png" alt="Support button logo">
+                </span>
+                <span class="ta-sidebar__menu-text">
+                  Support
+                </span>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="ta-sidebar__btn-wrap" style="background-image: url('../assets/images/sidebar-bg.png');">
+          <a href="#" class="ta-sidebar__btn">
+            <div class="ta-sidebar__btn-logo">
+              <img src="../assets/images/sidebar-btn-logo.png" alt="Get Premium button logo">
+            </div>
+            <div class="ta-sidebar__btn-cnt">
+              <span class="ta-sidebar__btn-text">Get Premium</span>
+              <span class="ta-sidebar__btn-text ta-sidebar__btn-text--small">$39/m</span>
+            </div>
+            <div class="ta-sidebar__btn-arrow">
+              <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10" fill="none">
+                <g clip-path="url(#clip0_0_16834)">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M3.31096 1.00904L9.58325 5.19266L3.31096 9.37628L3.31096 1.00904ZM2.05646 9.58333L2.05646 0.802124L0.802 0.802124V9.58333H2.05646Z"
+                    fill="#D0D2D9" />
+                </g>
+                <defs>
+                  <clipPath id="clip0_0_16834">
+                    <rect width="10" height="10" fill="white" />
+                  </clipPath>
+                </defs>
+              </svg>
+            </div>
+          </a>
         </div>
       </div>
+      <!-- sidebar content end -->
     </div>
-    <!-- layout content end -->
+    <div class="ta-layout__right">
+      <div class="content-wrapper">
+        <div style="height: 100vh;background-color: black; margin-bottom: 20px;"></div>
+      </div>
+      <div class="content-wrapper">
+        <div style="height: 100vh;background-color: black; margin-bottom: 20px;"></div>
+      </div>
+      <div class="content-wrapper">
+        <div style="height: 100vh;background-color: black; margin-bottom: 20px;"></div>
+      </div>
+      <div class="content-wrapper">
+        <div style="height: 100vh;background-color: black; margin-bottom: 20px;"></div>
+      </div>
+      <div class="content-wrapper">
+        <div style="height: 100vh;background-color: black; margin-bottom: 20px;"></div>
+      </div>
+    </div>
+  </div>
+  <!-- layout content end -->
 
-    <!-- scripts -->
-    <script src="../assets/js/jquery.slim.min.js"></script>
-    <script src="../assets/js/aos.js"></script>
-    <script src="../assets/js/slick.min.js"></script>
-    <script src="../assets/js/bootstrap.bundle.min.js"></script>
-    <script src="../assets/js/script.js"></script>
-    <!-- scripts -->
-  </body>
+  <!-- scripts -->
+  <script src="../assets/js/jquery.slim.min.js"></script>
+  <script src="../assets/js/aos.js"></script>
+  <script src="../assets/js/slick.min.js"></script>
+  <script src="../assets/js/bootstrap.bundle.min.js"></script>
+  <script src="../assets/js/script.js"></script>
+  <!-- scripts -->
+</body>
+
 </html>
