@@ -1,0 +1,274 @@
+.ta-cards{
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+
+  &__slides{
+    width: 100%;
+    position: relative;
+    max-width: 450px;
+    border-radius: 6px;
+    overflow: hidden;
+  }
+
+  &__cnt{
+    width: 100%;
+    position: relative;
+    padding: $spacer-4 $spacer-3;
+  }
+
+  &__img{
+    width: 100%;
+    min-height: 200px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    filter: brightness(.8);
+    &-wrap{
+      width: 100%;
+      .slick-track{
+        &::before,
+        &::after{
+          content: none;
+        }
+      }
+    }
+  }
+
+  &__nav{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    &-wrap{
+      position: absolute;
+      bottom: 8px;
+      left: 10px;
+    }
+
+    &-item{
+      width: 25px;
+      height: 25px;
+      border-radius: 50%;
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      margin: 8px;
+      filter: brightness(1);
+    }
+
+    .slick-list{
+      padding: 0 $spacer-2 !important;
+    }
+  }
+
+  &__btn-wrap{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    position: absolute;
+    bottom: 8px;
+    right: 0;
+    padding: 8px;
+  }
+
+  &__btn{
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    backdrop-filter: blur(15px);
+    background-image: url("data:image/svg+xml,%3Csvg width='10' height='10' viewBox='0 0 10 10' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg clip-path='url(%23clip0_0_20045)'%3E%3Cpath opacity='0.8' d='M8.125 1.38334L4.26198 5.20834L8.125 9.03334L6.93573 10.2083L1.875 5.20834L6.93573 0.208343L8.125 1.38334Z' fill='white'/%3E%3C/g%3E%3Cdefs%3E%3CclipPath id='clip0_0_20045'%3E%3Crect width='10' height='10' fill='white'/%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E%0A");
+    background-position: center;
+    background-size: 15px;
+    background-repeat: no-repeat;
+    border-radius: 4px;
+    overflow: hidden;
+    &--next,
+    &--prev{
+      margin: 0 8px;
+    }
+    &--prev{
+      transform: rotateZ(180deg);
+    }
+  }
+
+  &__title{
+    font-size: 18px;
+    font-weight: 700;
+    color: $color-hotelcard-title;
+    text-transform: capitalize;
+    padding-right: $spacer-2;
+    margin-bottom: $spacer-2;
+  }
+
+  &__rating{
+    width: 50px;
+    height: 32px;
+    font-size: 10px;
+    font-weight: 700;
+    color: $color-white;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    position: absolute;
+    right: 0;
+    top: 10px;
+    
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-bottom: $spacer-2;
+
+    span{
+      width: 10px;
+      height: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-left: $spacer-2;
+      svg{
+        width: 100%;
+      }
+    }
+  }
+
+  &__location{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    &-text{
+      font-size: 12px;
+      font-weight: 600;
+      color: $color-hotelcard-text;
+    }
+
+    &-link{
+      display: inline-block;
+      font-size: 12px;
+      font-weight: 600;
+      color: $color-red;
+      text-decoration: none;
+      text-transform: uppercase;
+
+      &:hover{
+        text-decoration: underline;
+      }
+    }
+  }
+
+  &__prks{
+    display: inline-flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-right: $spacer-3;
+    margin-bottom: $spacer-2;
+    &-wrap{
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;      
+      flex-wrap: wrap;
+      margin: $spacer-2 0;
+    }
+
+    &-logo{
+      width: 16px;
+      height: 16px;
+      display: flex;
+      align-items: center;
+      justify-content: center;      
+
+      svg{
+        width: 100%;
+      }
+    }
+
+    &-text{
+      font-size: 12px;
+      font-weight: 600;
+      color: $color-hotelcard-grey;
+      text-decoration: none;
+    }
+  }
+
+  &__morebtn{
+    display: inline-block;
+    font-size: 12px;
+    font-weight: 700;
+    color: #484848;
+    text-decoration: none;
+  }
+
+  &__bottom{
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;   
+      flex-direction: column;  
+  }
+
+  &__price{
+    display: inline-block;
+    font-size: 20px;
+    font-weight: 800;
+    color: $color-black;
+    text-decoration: none;
+  }
+
+  &__offer{
+    display: inline-block;
+    font-size: 12px;
+    font-weight: 600;
+    color: $color-orange;
+    text-decoration: none;
+    margin-right: $spacer-2;
+  }
+
+  &__texts{
+    display: inline-flex;
+    align-items: center;
+    justify-content: flex-start;
+  }
+
+  &__cntbtn-wrap{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin: $spacer-2 0;
+
+    .ta-btn{
+      margin-right: $spacer-2;
+    }
+  }
+}
+
+
+@include tablet{
+  .ta-cards{
+    flex-direction: row;
+
+    &__slides{
+      width: 40%;
+    }
+
+    &__cnt{
+      flex: 1;
+    }
+
+    &__location{
+      padding-right: $spacer-4;
+    }
+
+    &__bottom{
+      flex-direction: row;
+      align-items: center;
+    }
+
+    &__title{
+      padding-right: $spacer-6;
+    }
+  }
+}

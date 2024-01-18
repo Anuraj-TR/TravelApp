@@ -69,3 +69,34 @@ $(".ta-travel__tile-wrap").slick({
   ],
 });
 // Trip Package ends
+
+
+// hotel cards start
+
+const cards = document.querySelectorAll('.ta-cards');
+
+if (cards) {
+  cards.forEach(item => {
+    $(item.querySelector(".ta-cards__img-wrap")).slick({
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      arrows: true,
+      fade: true,
+      prevArrow: item.querySelector(".ta-cards__btn--prev"),
+      nextArrow: item.querySelector(".ta-cards__btn--next"),
+      //  asNavFor: ".slider-nav",
+    });
+    $(item.querySelector(".ta-cards__nav")).slick({
+      slidesToShow: 3,
+      slidesToScroll: 1,
+      asNavFor: item.querySelector(".ta-cards__img-wrap"),
+      infinite: false,
+      dots: false,
+      centerMode: true,
+      focusOnSelect: true,
+    });
+  })
+}
+		
+// hotel cards end
+
