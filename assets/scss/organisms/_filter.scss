@@ -1,0 +1,61 @@
+.ta-filter{
+  width: 100%;
+  max-width: 300px;
+  border-radius: 8px;
+  overflow: hidden;
+  &__title{
+    width: 100%;
+    font-size: 18px;
+    font-weight: 700;
+    color: $color-black;
+    padding: $spacer-4 $spacer-3;
+    background-color: #F9F9F9;
+  }
+
+  &__img{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: $spacer-3;
+
+    img{
+      width: 100%;
+    }
+  }
+
+  &__subtitle{
+    font-size: 16px;
+    font-weight: 600;
+    color: $color-black;
+    opacity: 0.7;
+    margin-bottom: $spacer-3;
+  }
+
+  &__cnt{
+    padding: $spacer-2 $spacer-3;
+    background-color: $color-white;
+    .ta-dropdown{
+      width: 100%;
+      margin-bottom: $spacer-3;
+      .btn{
+        width: 100%;
+        text-align: left;
+      }
+    }
+    .ta-checkbox{
+      --checkbox-height: 18px;
+      margin-bottom: $spacer-2;
+
+      &__text{
+        font-size: 11px;
+        color: $color-black;
+        opacity: 0.4;
+      }
+
+      .check-box{
+        border-color: #878B91;
+      }
+    }
+  }
+}
