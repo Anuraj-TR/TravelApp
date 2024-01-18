@@ -1,0 +1,53 @@
+.ta-btn {
+  display: inline-block;
+  padding: $spacer-2 $spacer-4;
+  border: 1px solid $color-red;
+  background-color: $color-red;
+  transition: all 0.3s ease-in-out;
+  border-radius: 32px;
+  &-text {
+    font-size: 14px;
+    font-weight: 700;
+    color: $color-white;
+    text-align: center;
+    text-transform: capitalize;
+    text-decoration: none;
+    opacity: 0.85;
+  }
+
+  &:hover {
+    background-color: $color-white;
+    .ta-btn-text {
+      color: $color-red;
+    }
+  }
+
+  &--blue {
+    background-color: $color-primary;
+    border-color: $color-primary;
+    border-radius: 4px;
+    text-transform: uppercase;
+    &:hover {
+      background-color: $color-white;
+      .ta-btn-text {
+        color: $color-primary;
+      }
+    }
+  }
+
+  &--grey {
+    background-color: $color-btn-grey;
+    border-color: $color-btn-grey;
+    border-radius: 4px;
+    text-transform: uppercase;
+    .ta-btn-text{
+      color: #33344F;
+    }
+    &:hover {
+      background-color: $color-white;
+      .ta-btn-text {
+        color: #33344F;
+      }
+    }
+  }
+}

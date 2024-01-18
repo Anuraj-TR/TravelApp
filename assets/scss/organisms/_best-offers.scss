@@ -1,9 +1,13 @@
 .ta-offer{
   &-wrap{
     width: 100%;
+    margin-bottom: $spacer-4;
+  }
+  &__contents{
+    width: 100%;
     background-color: $color-white;
     border-radius: 14px;
-    padding: $spacer-3 $spacer-2;
+    padding: $spacer-4 $spacer-3;
   }
   &__tile-wrap{
     display: flex;
@@ -22,6 +26,11 @@
   .ta-offer{
     &-wrap{
       padding: $spacer-5 $spacer-5;
+      margin-bottom: $spacer-0;
+      .content-wrapper{
+        background-color: $color-white;
+        border-radius: 14px;
+      }
     }
     &__tile-wrap{
       margin: 0 -16px;
@@ -36,13 +45,28 @@
 @include tablet-pro{
   .ta-offer{
     &-wrap{
-      padding: $spacer-5 $spacer-5;
+      margin-bottom: $spacer-6;
+    }
+    &__contents{
+      padding: $spacer-6 $spacer-5;
     }
     &__tile-wrap{
       margin: 0 -16px;
       .ta-offer{
         width: calc(33.33% - 32px);
         margin: 16px;
+      }
+    }
+  }
+}
+
+@include desktop{
+  .ta-offer{
+    &-wrap{
+      padding: $spacer-6 0;
+      margin-bottom: $spacer-3;
+      .content-wrapper{
+        background-color: transparent;
       }
     }
   }

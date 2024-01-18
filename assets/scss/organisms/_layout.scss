@@ -15,6 +15,7 @@
     top: 64px;
     left: -500px;
     transition: all 0.3s ease-in-out;
+      z-index: 99;
     background: var(
       --color-gradient-primary-100,
       linear-gradient(141deg, #0a69da 32.24%, #0856c8 115.93%, #0231a5 164.9%)
@@ -28,12 +29,12 @@
     &--active{
       left: 0;
       transition: all 0.3s ease-in-out;
-      z-index: 99;
     }
   }
 
   &__right {
     flex: 1;
+    padding-bottom: 80px;
     background-color: grey;
     height: 100vh;
     overflow-y: scroll;
@@ -53,7 +54,7 @@
     padding: $spacer-2 $spacer-4;
     &__left {
       position: static;
-      max-height: calc(100vh - 100px);
+      max-height: calc(100vh - 20px);
       border-radius: 16px;
       &.ta-sidebar--closed {
         width: auto;
@@ -61,6 +62,7 @@
     }
     &__right {
       margin-left: $spacer-3;
+      padding-bottom: 0;
     }
   }
 }
