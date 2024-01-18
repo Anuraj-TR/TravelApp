@@ -1,0 +1,49 @@
+.ta-offer{
+  &-wrap{
+    width: 100%;
+    background-color: $color-white;
+    border-radius: 14px;
+    padding: $spacer-3 $spacer-2;
+  }
+  &__tile-wrap{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    margin-top: $spacer-4;
+    .ta-offer{
+      width: 100%;
+      margin-bottom: $spacer-3;
+    }
+  }
+}
+
+@include tablet{
+  .ta-offer{
+    &-wrap{
+      padding: $spacer-5 $spacer-5;
+    }
+    &__tile-wrap{
+      margin: 0 -16px;
+      .ta-offer{
+        width: calc(50% - 32px);
+        margin: 16px;
+      }
+    }
+  }
+}
+
+@include tablet-pro{
+  .ta-offer{
+    &-wrap{
+      padding: $spacer-5 $spacer-5;
+    }
+    &__tile-wrap{
+      margin: 0 -16px;
+      .ta-offer{
+        width: calc(33.33% - 32px);
+        margin: 16px;
+      }
+    }
+  }
+}
