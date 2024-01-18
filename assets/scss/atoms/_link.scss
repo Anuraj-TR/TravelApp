@@ -1,0 +1,11 @@
+.ta-link{
+  font-size: 18px;
+  font-weight: 600;
+  color: $color-title-blue;
+  opacity: 0.5;
+  text-decoration: none;
+
+  &:hover{
+    opacity: 0.7;
+  }
+}

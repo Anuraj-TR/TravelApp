@@ -9,10 +9,13 @@
 
 // atoms
 @import 'atoms/dropdowns';
+@import 'atoms/title';
+@import 'atoms/link';
 // molecule
-
+@import 'molecules/package-tile';
 // organisms
 @import 'organisms/layout';
 @import 'organisms/sidebar';
 @import 'organisms/header';
+@import 'organisms/travel';
 // pages

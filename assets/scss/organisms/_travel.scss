@@ -1,0 +1,18 @@
+.ta-travel{
+  &-wrap{
+    width: 100%;
+  }
+  &__header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: $spacer-3;
+  }
+
+  &__tile-wrap{
+    margin-bottom: $spacer-3;
+    .ta-pkg{
+      margin: $spacer-3;
+    }
+  }
+}
