@@ -1,0 +1,116 @@
+.ta-form{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  background-color: $color-white;
+  border-radius: 16px;
+  padding: $spacer-3 $spacer-2;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+
+  &-wrap{
+    width: 100%;
+    margin-top: $spacer-5;
+  }
+
+  &__tile{
+    width: 100%;
+    border: 1px solid #EEF0F4;
+    background-color: rgba(124, 130, 155, 0.051);
+    border-radius: 8px;
+    padding: $spacer-3 $spacer-3;
+    margin-bottom: $spacer-2;
+
+    &-label{
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      opacity: 0.3;
+      margin-bottom: $spacer-2;
+
+      &_logo{
+        width: 15px;
+        height: 15px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-right: $spacer-2;
+
+        svg{
+          width: 100%;
+        }
+      }
+
+      &_text{
+        font-size: 12px;
+        font-weight: 400;
+        color: $color-text-blue;
+        text-decoration: none;
+        text-transform: uppercase;
+      }
+    }
+
+    &-maintext{
+        font-size: 16px;
+        font-weight: 700;
+        color: $color-dark-blue;
+        text-decoration: none;
+        text-transform: capitalize;
+        margin-bottom: $spacer-2;
+    }
+
+    &-location{
+        width: 100%;
+        display: flex;
+        font-size: 12px;
+        font-weight: 400;
+        color: $color-text-blue;
+        text-decoration: none;
+        opacity: 0.7;
+
+        &--logo{
+          width: 10px;
+          height: 10px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          margin-left: auto;
+
+          svg{
+            width: 100%;
+          }
+        }
+    }
+  }
+
+  .ta-btn{
+    padding: $spacer-3 $spacer-4;
+    border-radius: 6px;
+  }
+}
+
+@include tablet{
+  .ta-form{
+    padding: $spacer-4 $spacer-3;
+    &__tile{
+      width: calc(33.33% - 16px);
+      margin: 8px;
+
+      &-maintext{
+        min-height: 42px;
+      }
+    }
+    .ta-checkbox{
+      margin-left: $spacer-2;
+    }
+  }
+}
+
+@include desktop{
+  .ta-form{
+    padding: $spacer-5 $spacer-4;
+    .ta-btn{
+      padding: $spacer-4 $spacer-5;
+    }
+  }
+}

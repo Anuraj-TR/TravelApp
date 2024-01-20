@@ -1,0 +1,32 @@
+.ta-travel{
+  &-wrap{
+    width: 100%;
+    padding-top: $spacer-5;
+  }
+  &__header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: $spacer-3;
+  }
+
+  .slick-arrow,
+  .slick-dots{
+    display: none !important;
+  }
+
+  &__tile-wrap{
+    margin-bottom: $spacer-3;
+    .ta-pkg{
+      margin: $spacer-3;
+    }
+  }
+}
+
+@include tablet{
+  .ta-travel{
+    &__tile-wrap{
+      margin-bottom: $spacer-0 !important;
+    }
+  }
+}

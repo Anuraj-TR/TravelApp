@@ -5,6 +5,9 @@
   &-wrap{
     width: 100%;
     position: relative;
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
   }
 
   &__cnt {
@@ -143,17 +146,6 @@
     z-index: 10;
     transition: all 0.3s ease-in-out;
   }
-
-  &__bg{
-    width: 100%;
-    min-height: 65px;
-    position: absolute;
-    top: 0;
-    left: 0;
-    background-position: top;
-    background-size: cover;
-    background-repeat: no-repeat;
-  }
 }
 
 @include tablet{
@@ -209,10 +201,6 @@
     &__cnt{
       width: 50%;
       justify-content: flex-end;
-    }
-    &__bg{
-      min-height: 100px;
-      background-position: top;
     }
   }
 }

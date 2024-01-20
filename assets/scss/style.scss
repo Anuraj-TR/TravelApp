@@ -9,10 +9,19 @@
 
 // atoms
 @import 'atoms/dropdowns';
+@import 'atoms/title';
+@import 'atoms/link';
+@import 'atoms/buttons';
+@import 'atoms/checkbox';
 // molecule
-
+@import 'molecules/package-tile';
+@import 'molecules/offer-tile';
 // organisms
 @import 'organisms/layout';
 @import 'organisms/sidebar';
 @import 'organisms/header';
+@import 'organisms/travel';
+@import 'organisms/best-offers';
+@import 'organisms/perfect-deals';
+@import 'organisms/form';
 // pages

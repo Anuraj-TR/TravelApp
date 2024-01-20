@@ -1,0 +1,12 @@
+.ta-subtitle{
+  font-size: 22px;
+  font-weight: 800;
+  color: $color-title-blue;
+  text-transform: uppercase;
+}
+
+@include tablet-pro{
+  .ta-subtitle{
+    font-size: 24px;
+  }
+}
