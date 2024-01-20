@@ -252,6 +252,14 @@
   .ta-cards{
     flex-direction: row;
 
+    &__btn-wrap{
+      bottom: 28px;
+    }
+
+    &__nav-wrap{
+      bottom: 28px;
+    }
+
     &__slides{
       width: 40%;
     }
@@ -271,6 +279,18 @@
 
     &__title{
       padding-right: $spacer-6;
+    }
+  }
+}
+
+@include tablet-pro{
+  .ta-cards{
+    &__btn-wrap{
+      bottom: 16px;
+    }
+
+    &__nav-wrap{
+      bottom: 16px;
     }
   }
 }

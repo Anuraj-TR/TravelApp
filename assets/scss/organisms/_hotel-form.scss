@@ -48,6 +48,7 @@
     position: absolute;
     bottom: -700px;
     left: 0;
+    z-index: 9;
     width: 100%;
     background-color: $color-white;
     padding: $spacer-4 $spacer-2;
@@ -130,7 +131,10 @@
 @include tablet{
   .tv-searchform{
     &__filters{
-      padding: $spacer-5 $spacer-4
+      padding: $spacer-5 $spacer-4;
+      &--active{
+        bottom: 100px;
+      }
     }
   }
 }

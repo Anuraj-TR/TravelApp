@@ -7,6 +7,7 @@
     width: 100%;
     position: relative;
     overflow: hidden;
+    margin-top: $spacer-4;
   }
 
   &__head{
@@ -139,6 +140,7 @@
     top: 100px;
     right: -700px;
     transition: all 0.3s ease-in-out;
+    z-index: 9;
     &--active{
       right: 0;
       transition: all 0.3s ease-in-out;
