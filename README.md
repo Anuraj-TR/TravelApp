@@ -14,12 +14,7 @@ TravelApp is a demo project showcasing a mobile-first travel app design. It feat
 
 ## Screenshots
 
-![TravelApp Screenshot]
-
 ![image](https://github.com/Anuraj-TR/TravelApp/assets/101694416/1151b459-fa70-4dac-84f0-367816d5a67b)
-
-
-*Add your screenshot and replace "path/to/your/screenshot.png" with the actual file path.*
 
 ## Disclaimer
 
