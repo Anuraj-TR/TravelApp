@@ -100,3 +100,29 @@ if (cards) {
 		
 // hotel cards end
 
+// hotel search form start
+const filterbtn = document.querySelector(
+  ".tv-searchform .tv-searchform__btns .ta-btn--grey"
+);
+const searchFormFilters = document.querySelector(
+  ".tv-searchform .tv-searchform__filters"
+);
+const searchFromFilterCloseBtn = document.querySelector(
+  ".tv-searchform__filters__closebtn"
+);
+
+if (filterbtn) {
+  filterbtn.addEventListener('click', (e) => {
+    e.preventDefault();
+    searchFormFilters.classList.toggle("tv-searchform__filters--active");
+  })
+}
+
+if (searchFromFilterCloseBtn) {
+  searchFromFilterCloseBtn.addEventListener('click', (e) => {
+    e.preventDefault();
+    searchFormFilters.classList.remove("tv-searchform__filters--active");
+  })
+}
+// hotel search form end
+
