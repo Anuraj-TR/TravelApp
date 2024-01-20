@@ -23,6 +23,7 @@ const container = document.querySelector(".ta-layout__right");
 
 if (container) {
   container.addEventListener('scroll', (e) => {
+    // fixing the header if user has scrolled over 250
     if (container.scrollTop > 250) {
       header.classList.add("ta-header--fixed");
     }
@@ -33,7 +34,7 @@ if (container) {
 }
 // header starts
 
-// Trip Package starts
+// Trip Package carousel starts
 $(".ta-travel__tile-wrap").slick({
   dots: false,
   infinite: true,
@@ -68,4 +69,78 @@ $(".ta-travel__tile-wrap").slick({
     },
   ],
 });
-// Trip Package ends
+// Trip Package carousel ends
+
+
+// hotel cards start
+// selecting all available cards and adding carousel to each card images
+const cards = document.querySelectorAll('.ta-cards');
+
+if (cards) {
+  cards.forEach(item => {
+    $(item.querySelector(".ta-cards__img-wrap")).slick({
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      arrows: true,
+      fade: true,
+      prevArrow: item.querySelector(".ta-cards__btn--prev"),
+      nextArrow: item.querySelector(".ta-cards__btn--next"),
+      //  asNavFor: ".slider-nav",
+    });
+    $(item.querySelector(".ta-cards__nav")).slick({
+      slidesToShow: 3,
+      slidesToScroll: 1,
+      asNavFor: item.querySelector(".ta-cards__img-wrap"),
+      infinite: false,
+      dots: false,
+      centerMode: true,
+      focusOnSelect: true,
+    });
+  })
+}
+		
+// hotel cards end
+
+// hotel search form start
+const filterbtn = document.querySelector(
+  ".tv-searchform .tv-searchform__btns .ta-btn--grey"
+);
+const searchFormFilters = document.querySelector(
+  ".tv-searchform .tv-searchform__filters"
+);
+const searchFromFilterCloseBtn = document.querySelector(
+  ".tv-searchform__filters__closebtn"
+);
+
+if (filterbtn) {
+  filterbtn.addEventListener('click', (e) => {
+    e.preventDefault();
+    searchFormFilters.classList.toggle("tv-searchform__filters--active");
+  })
+}
+
+if (searchFromFilterCloseBtn) {
+  searchFromFilterCloseBtn.addEventListener('click', (e) => {
+    e.preventDefault();
+    searchFormFilters.classList.remove("tv-searchform__filters--active");
+  })
+}
+// hotel search form end
+
+// hotel card list start
+const cardsFilterBtn = document.querySelector(".ta-hotel__head-filterbtn");
+const cardsFilterBlock = document.querySelector(".ta-hotel__right");
+const cardsFilterCloseBtn = document.querySelector(".ta-filter__close");
+
+if (cardsFilterBtn && cardsFilterBlock) {
+  cardsFilterBtn.addEventListener("click", (e) => {
+    e.preventDefault();
+    cardsFilterBlock.classList.toggle("ta-hotel__right--active");
+  })
+  cardsFilterCloseBtn.addEventListener('click', (e) => {
+    e.preventDefault();
+    cardsFilterBlock.classList.remove("ta-hotel__right--active");
+  })
+}
+// hotel card list end
+

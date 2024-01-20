@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- styles -->
+  <link rel="stylesheet" href="../assets/css/aos.css">
+  <link rel="stylesheet" href="../assets/css/slick.css">
+  <link rel="stylesheet" href="../assets/css/slick-theme.css">
+  <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../assets/css/style.css" />
+  <!-- styles -->
+  <title>Document</title>
+</head>
+
+<body>
+  <!-- hotel page search form content start -->
+  <div class="tv-searchform-wrap">
+    <div class="content-wrapper">
+      <form class="tv-searchform">
+        <div class="tv-searchform__item">
+          <label for="place" class="tv-searchform__label">Where</label>
+          <!-- Dropdown content start -->
+          <div class="dropdown ta-dropdown">
+            <button class="btn dropdown-toggle" type="button" id="place" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Where..
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="place">
+              <li><button class="dropdown-item" type="button">Action</button></li>
+              <li><button class="dropdown-item" type="button">Another action</button></li>
+              <li><button class="dropdown-item" type="button">Something else here</button></li>
+            </ul>
+          </div>
+          <!-- Dropdown content end -->
+        </div>
+
+        <div class="tv-searchform__filters">
+          <!-- close button -->
+          <button class="ta-btn tv-searchform__filters__closebtn">
+            <span class="ta-btn-text">cancel</span>
+          </button>
+          <!-- close button -->
+
+          <div class="tv-searchform__filters-item">
+            <label for="date" class="tv-searchform__label">
+              Check-In
+            </label>
+            <input type="date" id="date" class="tv-searchform__filters-input">
+          </div>
+
+          <div class="tv-searchform__filters-item">
+            <label for="Check-out" class="tv-searchform__label">
+              Check-out
+            </label>
+            <input type="date" id="Check-out" class="tv-searchform__filters-input">
+          </div>
+
+          <div class="tv-searchform__filters-item">
+            <label for="Rooms-Guests" class="tv-searchform__label">
+              Rooms & Guests
+            </label>
+            <!-- Dropdown content start -->
+            <div class="dropdown ta-dropdown">
+              <button class="btn dropdown-toggle" type="button" id="Rooms-Guests" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                1 Room, 3 Adults
+              </button>
+              <ul class="dropdown-menu" aria-labelledby="place">
+                <li><button class="dropdown-item" type="button">Action</button></li>
+                <li><button class="dropdown-item" type="button">Another action</button></li>
+                <li><button class="dropdown-item" type="button">Something else here</button></li>
+              </ul>
+            </div>
+            <!-- Dropdown content end -->
+          </div>
+
+          <div class="tv-searchform__filters-item">
+            <label for="Hotel-Name" class="tv-searchform__label">
+              Hotel Name
+            </label>
+            <!-- Dropdown content start -->
+            <div class="dropdown ta-dropdown">
+              <button class="btn dropdown-toggle" type="button" id="Hotel-Name" data-bs-toggle="dropdown" aria-expanded="false">
+                1 Room, 3 Adults
+              </button>
+              <ul class="dropdown-menu" aria-labelledby="place">
+                <li><button class="dropdown-item" type="button">Action</button></li>
+                <li><button class="dropdown-item" type="button">Another action</button></li>
+                <li><button class="dropdown-item" type="button">Something else here</button></li>
+              </ul>
+            </div>
+            <!-- Dropdown content end -->
+          </div>
+
+          <div class="tv-searchform__filters-item">
+            <!-- default button red -->
+            <button class="ta-btn">
+              <span class="ta-btn-text">Search Flight</span>
+            </button>
+            <!-- default button red -->
+          </div>
+        </div>
+
+        <div class="tv-searchform__btns">
+          <!-- default button red -->
+          <button class="ta-btn">
+            <span class="ta-btn-text">Search Flight</span>
+            <span class="ta-btn-logo">
+              <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21" fill="none">
+                <path
+                  d="M17.9738 16.6302L15.1405 13.8052C16.0546 12.6406 16.5506 11.2024 16.5488 9.72185C16.5488 8.4033 16.1578 7.11437 15.4253 6.01804C14.6927 4.92172 13.6515 4.06723 12.4333 3.56265C11.2152 3.05806 9.87473 2.92604 8.58152 3.18328C7.28832 3.44051 6.10043 4.07545 5.16808 5.0078C4.23573 5.94015 3.60079 7.12804 3.34356 8.42124C3.08632 9.71445 3.21834 11.0549 3.72293 12.2731C4.22751 13.4912 5.08199 14.5324 6.17832 15.265C7.27465 15.9975 8.56358 16.3885 9.88212 16.3885C11.3627 16.3904 12.8008 15.8943 13.9655 14.9802L16.7905 17.8135C16.8679 17.8916 16.9601 17.9536 17.0616 17.9959C17.1632 18.0382 17.2721 18.06 17.3821 18.06C17.4921 18.06 17.6011 18.0382 17.7026 17.9959C17.8042 17.9536 17.8963 17.8916 17.9738 17.8135C18.0519 17.736 18.1139 17.6439 18.1562 17.5423C18.1985 17.4408 18.2203 17.3319 18.2203 17.2218C18.2203 17.1118 18.1985 17.0029 18.1562 16.9014C18.1139 16.7998 18.0519 16.7076 17.9738 16.6302ZM4.88212 9.72185C4.88212 8.73294 5.17537 7.76624 5.72478 6.94399C6.27418 6.12175 7.05508 5.48089 7.96871 5.10245C8.88234 4.72401 9.88767 4.62499 10.8576 4.81792C11.8275 5.01085 12.7184 5.48705 13.4177 6.18631C14.1169 6.88557 14.5931 7.77649 14.7861 8.74639C14.979 9.7163 14.88 10.7216 14.5015 11.6353C14.1231 12.5489 13.4822 13.3298 12.66 13.8792C11.8377 14.4286 10.871 14.7218 9.88212 14.7218C8.55604 14.7218 7.28427 14.1951 6.34659 13.2574C5.40891 12.3197 4.88212 11.0479 4.88212 9.72185Z"
+                  fill="white" />
+              </svg>
+            </span>
+          </button>
+          <!-- default button red -->
+
+          <!-- grey button -->
+          <button class="ta-btn ta-btn--grey">
+            <span class="ta-btn-text">book now</span>
+            <span class="ta-btn-logo">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="14" viewBox="0 0 18 14" fill="none">
+                <line x1="4.79199" y1="1.86914" x2="16.4335" y2="1.86914" stroke="#1E1E1E" stroke-width="3"
+                  stroke-linecap="round" />
+                <line x1="2.06445" y1="6.86914" x2="16.4335" y2="6.86914" stroke="#1E1E1E" stroke-width="3"
+                  stroke-linecap="round" />
+                <line x1="2.06445" y1="11.8691" x2="13.4304" y2="11.8691" stroke="#1E1E1E" stroke-width="3"
+                  stroke-linecap="round" />
+              </svg>
+            </span>
+          </button>
+          <!-- grey button -->
+        </div>
+      </form>
+    </div>
+  </div>
+  <!-- hotel page search form content end -->
+
+  <!-- scripts -->
+  <script src="../assets/js/jquery.slim.min.js"></script>
+  <script src="../assets/js/aos.js"></script>
+  <script src="../assets/js/slick.min.js"></script>
+  <script src="../assets/js/bootstrap.bundle.min.js"></script>
+  <script src="../assets/js/script.js"></script>
+  <!-- scripts -->
+</body>
+
+</html>
