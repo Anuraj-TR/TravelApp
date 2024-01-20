@@ -23,6 +23,7 @@ const container = document.querySelector(".ta-layout__right");
 
 if (container) {
   container.addEventListener('scroll', (e) => {
+    // fixing the header if user has scrolled over 250
     if (container.scrollTop > 250) {
       header.classList.add("ta-header--fixed");
     }
@@ -33,7 +34,7 @@ if (container) {
 }
 // header starts
 
-// Trip Package starts
+// Trip Package carousel starts
 $(".ta-travel__tile-wrap").slick({
   dots: false,
   infinite: true,
@@ -68,11 +69,11 @@ $(".ta-travel__tile-wrap").slick({
     },
   ],
 });
-// Trip Package ends
+// Trip Package carousel ends
 
 
 // hotel cards start
-
+// selecting all available cards and adding carousel to each card images
 const cards = document.querySelectorAll('.ta-cards');
 
 if (cards) {
@@ -125,4 +126,21 @@ if (searchFromFilterCloseBtn) {
   })
 }
 // hotel search form end
+
+// hotel card list start
+const cardsFilterBtn = document.querySelector(".ta-hotel__head-filterbtn");
+const cardsFilterBlock = document.querySelector(".ta-hotel__right");
+const cardsFilterCloseBtn = document.querySelector(".ta-filter__close");
+
+if (cardsFilterBtn && cardsFilterBlock) {
+  cardsFilterBtn.addEventListener("click", (e) => {
+    e.preventDefault();
+    cardsFilterBlock.classList.toggle("ta-hotel__right--active");
+  })
+  cardsFilterCloseBtn.addEventListener('click', (e) => {
+    e.preventDefault();
+    cardsFilterBlock.classList.remove("ta-hotel__right--active");
+  })
+}
+// hotel card list end
 

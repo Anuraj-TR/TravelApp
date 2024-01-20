@@ -3,13 +3,38 @@
   max-width: 300px;
   border-radius: 8px;
   overflow: hidden;
+
+  &__head{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: $spacer-4 $spacer-3;
+    background-color: #F9F9F9;
+  }
+
+  &__close{
+    display: block;
+    width: 30px;
+    height: 30px;
+    font-size: 12px;
+    font-weight: 500;
+    color: $color-text-blue;
+    text-align: center;
+    text-decoration: none;
+    padding: $spacer-2;
+    border-radius: 5px;
+    border: 1px solid #878B91;
+    background-color: $color-white;
+    box-shadow: none;
+    outline: none;
+  }
+
   &__title{
     width: 100%;
     font-size: 18px;
     font-weight: 700;
     color: $color-black;
-    padding: $spacer-4 $spacer-3;
-    background-color: #F9F9F9;
   }
 
   &__img{
@@ -56,6 +81,14 @@
       .check-box{
         border-color: #878B91;
       }
+    }
+  }
+}
+
+@include desktop{
+  .ta-filter{
+    &__close{
+      display: none;
     }
   }
 }

@@ -1,0 +1,204 @@
+.ta-hotel{
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+
+  &-wrap{
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+  }
+
+  &__head{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    background-color: #FBFCFD;
+    border-radius: 6px;
+    padding: $spacer-3 $spacer-2;
+    margin-bottom: $spacer-3;
+
+    &-top{
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      margin-bottom: $spacer-2;
+    }
+
+    &-title{
+      font-size: 20px;
+      font-weight: 700;
+      color: $color-black;
+      text-decoration: none;
+      padding-right: $spacer-2;
+      border-right: 1px solid $color-black;
+      margin-right: $spacer-2;
+
+    }
+
+    &-text{
+      font-size: 12px;
+      font-weight: 600;
+      color: $color-black;
+      text-decoration: none;
+      margin-right: $spacer-2;
+
+      span{
+        color: #177CFD;
+      }
+    }
+
+    &-filterbtn{
+      font-size: 12px;
+      font-weight: 600;
+      color: $color-text-blue;
+      padding: $spacer-2;
+      text-transform: capitalize;
+      text-decoration: none;
+      margin-left: auto;
+    }
+
+    &-bottom{
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    &-btnwrap{
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      max-width: 275px;
+      overflow: hidden;
+      overflow-x: scroll;
+      border-right: 1px solid $color-black;
+      padding-right: $spacer-2;
+      margin-right: $spacer-2;
+
+      .ta-btn{
+        background-color: #163668;
+        border-color: #163668;
+        padding: $spacer-1 $spacer-3;
+        &-text{
+          font-size: 12px;
+          font-weight: 700;
+        }
+
+        &:hover{
+          background-color: $color-white;
+          .ta-btn-text{
+            color: #163668;
+          }
+        }
+
+        &--nobg{
+          background-color: transparent;
+          border-color: transparent;
+          .ta-btn-text{
+            color: #818393;
+          }
+          &:hover{
+            background-color: transparent;
+
+          .ta-btn-text{
+            color: #163668;
+          }
+          }
+        }
+      }
+    }
+
+    &-map{
+      font-size: 14px;
+      font-weight: 700;
+      color: #1E6ED5;
+      display: block;
+      text-align: center;
+      text-decoration: none;
+      padding: $spacer-2;
+
+      span{
+        display: none;
+      }
+      &:hover{
+        text-decoration: underline;
+      }
+    }
+  }
+
+  &__left{
+    width: 100%;
+  }
+
+  &__right{
+    position: absolute;
+    top: 100px;
+    right: -700px;
+    transition: all 0.3s ease-in-out;
+    &--active{
+      right: 0;
+      transition: all 0.3s ease-in-out;
+    }
+  }
+
+  &__card-wrap{
+    width: 100%;
+
+    .ta-cards{
+      margin-bottom: $spacer-3;
+    }
+  }
+}
+
+@include tablet-pro{
+  .ta-hotel{
+    &__head{
+      padding: $spacer-3 $spacer-4;
+    }
+  }
+}
+
+@include desktop{
+  .ta-hotel{
+    &__head{
+      flex-direction: row;
+      padding: $spacer-3 $spacer-4;
+
+      &-top{
+        width: 30%;
+        margin-bottom: 0;
+      }
+
+      &-btnwrap{
+        max-width: unset;
+        overflow: auto;
+      }
+
+      &-filterbtn{
+        display: none;
+      }
+
+      &-bottom{
+        justify-content: flex-end;
+      }
+
+      &-map{
+        span{
+          display: inline-block;
+        }
+      }
+    }
+    &__left{
+      width: 80%;
+      margin-right: $spacer-3;
+    }
+    &__right{
+      flex: 1;
+      position: static;
+    }
+  }
+}

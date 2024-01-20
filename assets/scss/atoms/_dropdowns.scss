@@ -3,6 +3,9 @@
     font-size: 13px;
     font-weight: 600;
     color: $color-black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     border: 1px solid #DADDE3;
     outline: none;
     box-shadow: none;
