@@ -20,6 +20,7 @@ if (headerHamburg && sidebar) {
 // header starts
 const header = document.querySelector(".ta-header-wrap");
 const container = document.querySelector(".ta-layout__right");
+const heroBg = document.querySelector(".ta-layout-herobg");
 
 if (container) {
   container.addEventListener('scroll', (e) => {
@@ -29,6 +30,9 @@ if (container) {
     }
     else {
       header.classList.remove("ta-header--fixed");
+    }
+    if (heroBg) {
+      heroBg.style.top = (-(container.scrollTop)+'px');
     }
   })
 }

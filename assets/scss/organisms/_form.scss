@@ -11,6 +11,7 @@
   &-wrap{
     width: 100%;
     margin-top: $spacer-5;
+    margin-top: 40px;
   }
 
   &__tile{
@@ -92,6 +93,9 @@
 @include tablet{
   .ta-form{
     padding: $spacer-4 $spacer-3;
+    &-wrap{
+      margin-top: 80px;
+    }
     &__tile{
       width: calc(33.33% - 16px);
       margin: 8px;
